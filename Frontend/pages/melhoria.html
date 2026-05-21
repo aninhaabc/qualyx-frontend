@@ -1,0 +1,33 @@
+<div class="screen active">
+  <nav class="topbar">
+    <a class="logo" href="#"><div class="logo-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1.5L9.8 5.8l4.7.4-3.4 3 1 4.6L8 11.5l-4.1 2.3 1-4.6-3.4-3 4.7-.4L8 1.5z" fill="#fff"/></svg></div>Qualyx</a>
+    <button class="nav-link" onclick="show('dashboard')">Dashboard</button>
+    <button class="nav-link" onclick="show('conversas')">Conversas</button>
+    <button class="nav-link" onclick="show('avaliacoes')">Avaliações</button>
+    <button class="nav-link" onclick="show('alertas')">Alertas <span style="background:#ef4444;color:#fff;font-size:10px;font-weight:700;padding:1px 6px;border-radius:10px;margin-left:2px">3</span></button>
+    <button class="nav-link" onclick="show('configuracoes')">Configurações</button>
+    <div class="topbar-right"><span class="alert-pill" onclick="show('alertas')">3 alertas</span><div class="avatar">GV</div></div>
+  </nav>
+  <div class="page">
+    <div class="breadcrumb"><span class="link" onclick="show('dashboard')">Dashboard</span><span class="sep">/</span><span class="link" onclick="show('problema')">Baixa clareza em cobranças</span><span class="sep">/</span><span class="current">Sugestão de melhoria</span></div>
+    <div class="page-header"><div class="page-title">Melhoria gerada pela IA</div><div class="page-sub">Baseada em análise de 847 conversas no contexto de cobrança e cancelamento</div></div>
+    <div class="gain-box"><div class="gain-em">🎯</div><div class="gain-t">Aplicar essa correção pode <strong>melhorar a satisfação em 10–15%</strong> e reduzir escaladas desnecessárias em até 40% no contexto de cobranças e cancelamentos.</div></div>
+    <div class="improve-grid">
+      <div class="improve-col"><span class="imp-label imp-before">❌ Resposta atual (problemática)</span><div class="imp-text">Conforme a política vigente de cancelamento da empresa, de acordo com os termos e condições estabelecidos no contrato de prestação de serviços firmado entre as partes, o processo de desligamento requer a análise do departamento responsável, sendo necessário o cumprimento do prazo contratual estipulado no item 4.2 do referido documento. Poderia confirmar se está ciente dessas condições?</div></div>
+      <div class="improve-col"><span class="imp-label imp-after">✓ Resposta sugerida pela IA</span><div class="imp-text imp-after-text">Tudo certo! Você pode cancelar agora mesmo pelo app em 2 minutinhos, ou posso fazer isso aqui pra você agora. Qual prefere? 😊</div></div>
+    </div>
+    <div class="card" style="margin-bottom:18px">
+      <div class="card-title">Por que essa resposta é melhor?</div>
+      <div style="display:flex;flex-direction:column;gap:11px;margin-top:4px">
+        <div style="display:flex;gap:10px;align-items:flex-start"><span class="tag tag-green" style="flex-shrink:0;margin-top:1px">Clareza ↑ +62pts</span><span style="font-size:13px;color:var(--text2)">Vai direto ao ponto — confirma que é possível cancelar e oferece 2 caminhos simples sem fricção</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><span class="tag tag-blue" style="flex-shrink:0;margin-top:1px">Empatia ↑ +40pts</span><span style="font-size:13px;color:var(--text2)">Tom amigável e próximo, sem jargão jurídico ou linguagem intimidadora que gera ansiedade</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><span class="tag tag-amber" style="flex-shrink:0;margin-top:1px">Resolução ↑ +55pts</span><span style="font-size:13px;color:var(--text2)">Tenta resolver o problema antes de escalar, evitando handoff desnecessário para atendente humano</span></div>
+      </div>
+    </div>
+    <div class="card" style="margin-bottom:18px">
+      <div class="card-title">Ajuste de prompt sugerido</div>
+      <div class="code-block"><span class="c-comment"># Adicionar às instruções do bot — contexto: cobrança e cancelamento</span><br><br><span class="c-key">Quando o usuário pedir cancelamento ou segunda via:</span><br>  <span class="c-em">1.</span> Confirme que é possível fazer — <span class="c-val">SEM mencionar contratos ou políticas</span><br>  <span class="c-em">2.</span> Ofereça no máximo <span class="c-val">2 opções</span> de como resolver (app ou aqui mesmo)<br>  <span class="c-em">3.</span> Use linguagem <span class="c-val">informal, direta</span> — como se fosse um amigo ajudando<br>  <span class="c-em">4.</span> Tente resolver <span class="c-val">antes</span> de transferir para humano<br>  <span class="c-em">5.</span> Nunca cite números de cláusulas ou itens contratuais</div>
+      <div class="btn-row"><button class="btn btn-success">✓ Aplicar ajuste</button><button class="btn btn-outline" onclick="show('conversa')">Ver mais exemplos</button><button class="btn btn-ghost" onclick="show('dashboard')">← Voltar ao dashboard</button></div>
+    </div>
+  </div>
+</div>

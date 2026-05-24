@@ -7,8 +7,14 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Qualyx",
-  description: "QA para agentes de IA",
+  title: "Qualyx ",
+  description:
+    "Monitore, avalie e detecte falhas em agentes de IA automaticamente, com foco em negócio e compliance.",
+  openGraph: {
+    title: "Qualyx ",
+    description: "Sua IA atende clientes. A Qualyx garante a qualidade.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -18,9 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={geist.className}>
-        {children}
-      </body>
+      <body className={geist.className}>{children}</body>
     </html>
   );
 }

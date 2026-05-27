@@ -39,7 +39,7 @@ const plans = [
   {
     id: "pro",
     name: "Pro",
-    price: "R$ 499",
+    price: "R$ 1500",
     period: "/mês",
     badge: "Mais escolhido",
     features: [

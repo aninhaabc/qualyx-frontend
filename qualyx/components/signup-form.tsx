@@ -16,7 +16,7 @@ const planMeta: Record<Plan, { label: string; price: string; tagline: string }> 
   },
   pro: {
     label: "Pro",
-    price: "R$ 499/mês",
+    price: "R$ 1500/mês",
     tagline: "Para operações em produção.",
   },
   enterprise: {
